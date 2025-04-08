@@ -1,1 +1,11 @@
 # Ignorar arquivos de log
+<<<<<<< HEAD
+*.log
+
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar arquivos temporários do sistema
+*.tmp
+=======
+>>>>>>> 8e1e37eb0241034b7fcc01188a27e28aefd8be1a
