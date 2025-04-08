@@ -1,0 +1,30 @@
+.header {
+    background-color: rgb(131, 84, 189);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 8px;
+    text-align: start;
+    font-weight: 600;
+    color: rgb(53, 52, 53);
+  }
+  
+  .container {
+    text-align: start;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 6px;
+  }
+  
+  .footer {
+    padding-inline: 8px;
+    padding-block: 4px;
+    border-top: 1px dotted gray;
+    font-size: 12px;
+  }
+  
+  .body {
+    padding: 8px;
+  }
+
+
