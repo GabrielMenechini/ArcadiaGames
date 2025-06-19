@@ -1,0 +1,13 @@
+.label {
+    font-weight: 500;
+    font-size: 18px;
+    color: #5a5a5a;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .inputContainer {
+    padding: 8px;
+    width: 30%;
+    border-radius: 4px;
+  }

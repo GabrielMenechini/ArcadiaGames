@@ -1,34 +1,55 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
-import './App.css';
-import Card from './components/Card';
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
+import './index.css';
 
-import Contador from './components/contador';
+import PrivateRoute from "./components/PrivateRoute";
+
 import Login from './pages/Login';
+import Forms from "./pages/Forms";
 import Home from './pages/Home';
 import Games from './pages/Games';
+import React from 'react';
+import GTA5 from './pages/GTA5';
+import UsersCrud from './pages/UsersCrud';
+
+
+
+
 
 function App() {
-  
   return (
-    <div className=""  >Aula 2 - componentes
-    <Card texto="Gustavo lima" header='Card1' footer='footer card1'></Card>
-      <Card texto="Arcane Odyssey é vida" header='Card2'></Card>
-      
-     
-      <Contador></Contador>
+    <div>
+      <div className="App"></div>
 
-      
-
-    
       <BrowserRouter>
         <Routes>
+          {}
           <Route path="/" element={<Login />} />
-          <Route path="/home/:id" element={<Home />} />
-          <Route path="/games" element={<Games />} />
+
+          {}
+          <Route
+            element={
+              <PrivateRoute>
+                <Outlet />
+              </PrivateRoute>
+            }
+          >
+            <Route path="/home" element={<Home />} />
+            <Route path="/games" element={<Games />} />
+            <Route path="/games/:name" element={<GTA5 />} />
+            <Route path="/users" element={<UsersCrud />} />
+            <Route
+              />
+          </Route>
+
+          {}
+          <Route path="/forms" element={<Forms />} />
+
+          {}
+          <Route path="*" element={<Login />} />
         </Routes>
       </BrowserRouter>
-  </div>);
-
+    </div>
+  );
 }
 
-export default App
+export default App;

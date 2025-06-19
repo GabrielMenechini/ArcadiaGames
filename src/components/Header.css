@@ -1,0 +1,15 @@
+.headerContainer {
+    flex: 1;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(179, 20, 20);
+    font-size: 48px;
+    color: rgb(75, 174, 158);
+    align-items: center;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }

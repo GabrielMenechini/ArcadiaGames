@@ -1,0 +1,12 @@
+.header {
+  width: 0%;
+  padding: 16px 0px;
+  background: #222;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 24px;
+}
